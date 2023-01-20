@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Hover dropdown</title>
+<style>
+nav{
+background-color:#99FFFF;
+padding:15px;
+box-shadow:2px 2px 2px 2px grey;
+}
+a{
+text-decoration:none;
+font-size:18px;
+color:black;
+font-weight:900;
+margin-left:90px;
+font-family: 'Quicksand', sans-serif;
+}
+.main_list{
+display:inline;
+}
+.dropdown-main{
+position:absolute;
+z-index:5;
+left:525px;
+top:150px;
+background-color:#99FFFF;
+box-shadow:2px 2px 2px 2px grey;
+display:none;
+}
+.mainhover:hover .dropdown-main{
+display:block;
+}
+</style>
+</head>
+<body>
+<h1>Trial</h1>
+<nav>
+<ul class="main">
+<li class="main_list"><a href="https://www.instagram.com/">Instagram</a></li>
+<li class="main_list"><a href="https://www.instagram.com/">Instagram</a></li>
+
+<li class="main_list mainhover">
+<a href="https://www.instagram.com/">Instagram</a>
+<ul class="dropdown-main">
+<li>Instagram</li>
+<li>Instagram</li>
+<li>Instagram</li></ul></li>
+
+<li class="main_list"><a href="https://www.instagram.com/">Instagram</a></li>
+<li class="main_list"><a href="https://www.instagram.com/">Instagram</a></li>
+</ul>
+</nav>
+</body>
+</html>
